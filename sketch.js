@@ -20,7 +20,7 @@ function setup() {
 	createCanvas(800, 750);
 
 	// fairyVoice.play();
-fairyVoice.play();
+
 	fairy = createSprite(130, 540);
 	fairy.addAnimation("fairyflying",fairyImg);  
 	fairy.scale =0.25;
@@ -43,6 +43,7 @@ fairyVoice.play();
 
 function draw() {
   background(bgImg);
+	fairyVoice.play();
 	star.x=star.position.x;
 	star.y=star.position.y;
   keyPressed2();
